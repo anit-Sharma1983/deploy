@@ -1,0 +1,8 @@
+const ScanIcon = ({ width = 24, height = 24, color = 'currentColor' }) => (
+  <svg width={width} height={height} viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z" stroke={color} strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+    <circle cx="12" cy="13" r="4" stroke={color} strokeWidth="2"/>
+  </svg>
+);
+
+export default ScanIcon;

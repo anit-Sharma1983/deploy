@@ -1,0 +1,115 @@
+.uploadArea {
+  border: 2px dashed var(--color-secondary-300);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-8);
+  text-align: center;
+  background: white;
+  transition: var(--transition-normal);
+  cursor: pointer;
+  margin-bottom: var(--spacing-6);
+}
+
+.uploadArea:hover,
+.uploadArea.dragOver {
+  border-color: var(--color-primary-500);
+  background: var(--color-primary-50);
+}
+
+.uploadIcon {
+  color: var(--color-secondary-400);
+  margin-bottom: var(--spacing-4);
+}
+
+.uploadArea:hover .uploadIcon,
+.uploadArea.dragOver .uploadIcon {
+  color: var(--color-primary-500);
+}
+
+.uploadTitle {
+  font-size: var(--font-size-lg);
+  font-weight: var(--font-weight-semibold);
+  color: var(--color-secondary-900);
+  margin-bottom: var(--spacing-2);
+}
+
+.uploadDescription {
+  font-size: var(--font-size-base);
+  color: var(--color-secondary-600);
+  margin-bottom: var(--spacing-4);
+}
+
+.uploadActions {
+  display: flex;
+  gap: var(--spacing-4);
+  justify-content: center;
+  margin-bottom: var(--spacing-4);
+}
+
+.uploadButton {
+  padding: var(--spacing-3) var(--spacing-6);
+  border: none;
+  border-radius: var(--border-radius-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  cursor: pointer;
+  transition: var(--transition-fast);
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-2);
+}
+
+.primaryButton {
+  background: var(--color-primary-500);
+  color: white;
+}
+
+.primaryButton:hover {
+  background: var(--color-primary-600);
+}
+
+.secondaryButton {
+  background: var(--color-secondary-100);
+  color: var(--color-secondary-700);
+  border: 1px solid var(--color-secondary-300);
+}
+
+.secondaryButton:hover {
+  background: var(--color-secondary-200);
+}
+
+.uploadInfo {
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary-500);
+}
+
+.hiddenInput {
+  display: none;
+}
+
+.progressContainer {
+  margin-top: var(--spacing-4);
+  padding: var(--spacing-4);
+  background: var(--color-secondary-50);
+  border-radius: var(--border-radius-md);
+}
+
+.progressBar {
+  width: 100%;
+  height: 8px;
+  background: var(--color-secondary-200);
+  border-radius: var(--border-radius-sm);
+  overflow: hidden;
+  margin-bottom: var(--spacing-2);
+}
+
+.progressFill {
+  height: 100%;
+  background: var(--color-primary-500);
+  transition: width 0.3s ease;
+}
+
+.progressText {
+  font-size: var(--font-size-sm);
+  color: var(--color-secondary-600);
+  text-align: center;
+}
